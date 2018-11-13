@@ -1,0 +1,277 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #707071;
+}
+
+/* FONTS SIZE */
+
+.xxl-text {
+    font-size: 4rem;
+    color: #15263e;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.xl-text {
+    font-size: 3.5rem;
+}
+
+.large-text {
+    font-size: 2.5rem;
+    /* 2.5 */
+}
+
+.medium-text {
+    font-size: 2.2rem;
+}
+
+.small-text {
+    font-size: 1.6rem;
+}
+
+.xs-text {
+    font-size: 1.5rem;
+    line-height: 200%;
+}
+
+/* GLOBAL CSS */
+
+/*granatowy #15263e */
+/* fioletowy #a21af0 */
+/* różowy  #ff0072*/
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.btn {
+    border: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #a21af0, #ff0072);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ########################
+            NAV
+########################## */
+.nav {
+    padding: 45px 0;
+    background-color: #15263e;
+}
+
+/* .nav__list {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.nav__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: .5px;
+    /* chwilowo wylaczone */
+    display: none;
+}
+
+.fa-caret-down {
+    color: #fff;
+    margin-left: 15px;
+}
+
+/* ########################
+            HEADER
+########################## */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.header__wrap {
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.header {
+    background: url(../images/bg_home.jpg) no-repeat center -2vh;
+    background-size: cover;
+    height: 80vh;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header__hello {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.header__name {
+    font-size: 8rem;
+    line-height: 80%;
+    display: inline-block;
+    background: linear-gradient(to right, #a21af0, #ff0072);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header__surname {
+    font-size: 6.4rem;
+    letter-spacing: 6px;
+}
+
+.header__text {
+    padding: 20px 0 40px;
+    font-size: 1.2rem;
+}
+
+/* ########################
+            ABOUT
+########################## */
+
+.about__left {
+    text-align: right;
+}
+
+.about__job {
+    padding: 20px 0 25px;
+    color: #a21af0;
+    font-weight: bold;
+}
+
+/* ########################
+        MEDIA QUERIES
+########################## */
+
+@media (orientation: landscape) and (max-width: 900px) {
+
+    /* header */
+    .header {
+        height: 140vh;
+    }
+
+    .header__name {
+        font-size: 10rem;
+    }
+
+    .header__surname {
+        font-size: 8.2rem;
+    }
+
+}
+
+@media (min-width: 360px) {
+    .xxl-text {
+        font-size: 5rem;
+    }
+
+
+    .small-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .btn {
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+
+    /* header */
+    .header__name {
+        font-size: 12rem;
+    }
+
+    .header__surname {
+        font-size: 10rem;
+    }
+
+    .header__hello {
+        font-size: 3rem;
+    }
+
+    .header__text {
+        padding: 10px 0 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* header */
+    .header__name {
+        font-size: 14rem;
+    }
+
+    .header__surname {
+        font-size: 12rem;
+    }
+
+    .header__text {
+        font-size: 1.7rem;
+    }
+
+    /* about */
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about__left,
+    .about__right {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .large-text {
+        font-size: 2.5rem;
+    }
+
+    /* about */
+    .about {
+        padding: 130px 0;
+        background: url(../images/about_person.png) no-repeat center;
+    }
+
+    .about__left,
+    .about__right {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1366px) {
+
+    /* header */
+    .header__name {
+        font-size: 20rem;
+    }
+
+    .header__surname {
+        font-size: 17rem;
+    }
+
+    .header__hello {
+        font-size: 3.5rem;
+    }
+
+    .header__text {
+        font-size: 2.5rem;
+    }
+
+}
