@@ -8,26 +8,37 @@ body {
 }
 
 /* FONTS SIZE */
-
-.xxl-text {
-    font-size: 4rem;
-    color: #15263e;
-    text-transform: uppercase;
+.heading {
+    padding-bottom: 30px;
+    color: #4d4d4d;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heading--xl {
+    color: #15263e;
+    padding-bottom: 20px;
+    font-size: 4rem;
     letter-spacing: 1.5px;
 }
 
-.xl-text {
+.heading--large {
     font-size: 3.5rem;
 }
 
-.large-text {
+.heading--medium {
     font-size: 2.5rem;
-    /* 2.5 */
+    padding-top: 30px;
 }
 
-.medium-text {
+.heading--small {
     font-size: 2.2rem;
+}
+
+.heading--xs {
+    padding-top: 20px;
+    font-size: 1.6rem;
+    letter-spacing: .5px;
 }
 
 .small-text {
@@ -39,6 +50,7 @@ body {
     font-size: 1.5rem;
     line-height: 200%;
 }
+
 
 /* GLOBAL CSS */
 
@@ -64,11 +76,6 @@ body {
     letter-spacing: 1px;
 }
 
-.title {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #4d4d4d;
-}
 
 /*  icons */
 .fa-mobile-alt,
@@ -141,7 +148,7 @@ body {
 .header {
     background: url(../images/bg_home.jpg) no-repeat center -2vh;
     background-size: cover;
-    height: 65vh;
+    height: 75vh;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -174,25 +181,25 @@ body {
             ABOUT
 ########################## */
 
-.about__left {
+.about-person {
     text-align: right;
     padding: 20px 0;
 }
 
-.about__job {
-    padding: 20px 0 25px;
+.about-person__job {
+    padding-bottom: 40px;
     color: #a21af0;
     font-weight: bold;
 }
 
-.about__right {
+.about-stats {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     color: #4d4d4d;
 }
 
-.about__progress {
+.about-stats__progress {
     width: 0;
     height: 10px;
     margin: 15px 0 35px;
@@ -209,7 +216,7 @@ body {
     text-align: center;
 }
 
-.small-footer__wrap {
+.small-footer__parent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,11 +235,7 @@ body {
     margin: 0 auto;
 }
 
-.small-footer__title {
-    padding: 20px 0 5px;
-}
-
-.small-footer__text {
+.small-text--gap {
     line-height: 130%;
 }
 
@@ -244,14 +247,11 @@ body {
     text-align: center;
 }
 
-.services__text {
-    padding: 10px 0 20px;
-}
-
 .services__boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 
 .services__box {
@@ -259,14 +259,19 @@ body {
     padding-top: 40px;
 }
 
-.services__title {
-    padding: 20px 0 5px;
-}
 
 .services__icon {
     background: linear-gradient(to right, #a21af0, #ff0072);
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.small-footer__icon {
+    background-color: #374362;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -300,7 +305,7 @@ body {
 
 @media (min-width: 360px) {
 
-    .small-text {
+    .heading--xs {
         font-size: 1.8rem;
     }
 }
@@ -337,8 +342,8 @@ body {
     }
 
     /* about */
-    .about__left,
-    .about__right {
+    .about-person,
+    .about-stats {
         width: 45%;
     }
 
@@ -356,7 +361,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .xxl-text {
+    .heading--xl {
         font-size: 5rem;
     }
 
@@ -374,18 +379,16 @@ body {
     }
 
     /* about */
-    .about__left,
-    .about__right {
+    .about-person,
+    .about-stats {
         width: 47%;
     }
-
 
     .small-footer__box {
         width: 33.33%;
     }
 
-
-    .small-footer__wrap {
+    .small-footer__parent {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -395,30 +398,26 @@ body {
 @media (min-width: 1024px) {
 
     /*  about */
-    .about__left,
-    .about__right {
+    .about-person,
+    .about-stats {
         width: 46%;
     }
 }
 
 @media (min-width: 1200px) {
 
-    .large-text {
-        font-size: 2.5rem;
-    }
-
     /* about */
     .about {
-        padding: 87px 0;
+        padding: 80px 0;
         background: url(../images/about_person.png) no-repeat center;
     }
 
-    .about__right {
+    .about-stats {
         padding-left: 30px;
     }
 
-    .about__left,
-    .about__right {
+    .about-person,
+    .about-stats {
         width: 28%;
     }
 
@@ -446,6 +445,10 @@ body {
         font-size: 2.5rem;
     }
 
+    .heading--xs {
+        padding-top: 0;
+    }
+
     /* small footer */
     .small-footer__icon {
         margin: 0 25px 0 0;
@@ -458,7 +461,7 @@ body {
         text-align: left;
     }
 
-    .small-footer__title {
+    .title--small-footer {
         padding-top: 0;
     }
 }
