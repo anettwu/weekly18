@@ -32,18 +32,18 @@
     <header class="header">
         <div class="header__wrap">
             <p class="header__hello">hello, I am</p>
-            <h2 class="header__name">john</h2>
+            <h2 class="header__name gradient">john</h2>
             <h2 class="header__surname">smith</h2>
             <h1 class="header__text">i have more than 10 years experience</h1>
-            <button class="btn">download cv</button>
+            <button class="btn gradient">download cv</button>
         </div>
     </header>
     <!-- ABOUT -->
-    <section class="about wrap">
+    <section class="about wrap wrap--about">
         <div class="about-person">
             <h2 class="heading heading--xl">John Smith</h2>
-            <h1 class="about-person__job small-text">Web Designer</h1>
-            <p class="xs-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            <h1 class="small-text small-text--jobs">Web Designer</h1>
+            <p class="xs-text xs-text--about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
                 consectetur
                 accusamus autem itaque recusandae consequuntur aliquid laborum fugiat beatae quas, cum unde, ratione
                 provident suscipit magni veritatis deleniti obcaecati. Itaque perferendis, repellendus autem in unde
@@ -53,19 +53,19 @@
         <div class="about-stats">
             <div class="xs-text">
                 <p>design</p>
-                <div id="progress-bar1" class="about-stats__progress"></div>
+                <div id="progress-bar1" class="about-stats__progress gradient"></div>
             </div>
             <div class="xs-text">
                 <p>photography</p>
-                <div id="progress-bar2" class="about-stats__progress"></div>
+                <div id="progress-bar2" class="about-stats__progress gradient"></div>
             </div>
             <div class="xs-text">
                 <p>marketing</p>
-                <div id="progress-bar3" class="about-stats__progress"></div>
+                <div id="progress-bar3" class="about-stats__progress gradient"></div>
             </div>
             <div class="xs-text">
                 <p>branding</p>
-                <div id="progress-bar4" class="about-stats__progress"></div>
+                <div id="progress-bar4" class="about-stats__progress gradient"></div>
             </div>
         </div>
     </section>
@@ -98,11 +98,11 @@
         </div>
     </footer>
     <section class="services wrap">
-        <h2 class="heading heading--large">our services</h2>
-        <p class="small-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <h2 class="heading heading--xl">our services</h2>
+        <p class="small-text small-text--services">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         <div class="services__boxes">
             <div class="services__box">
-                <div class="services__icon"><i class="fas fa-dolly-flatbed"></i></div>
+                <div class="services__icon gradient"><i class="fas fa-dolly-flatbed"></i></div>
                 <div class="heading heading--medium">best services</div>
                 <p class="xs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos at
                     nobis
@@ -110,14 +110,14 @@
                     consectetur cum quae. Voluptate, quibusdam adipisci.</p>
             </div>
             <div class="services__box">
-                <div class="services__icon"><i class="fas fa-clipboard-list"></i></div>
+                <div class="services__icon gradient"><i class="fas fa-clipboard-list"></i></div>
                 <div class="heading heading--medium">best services</div>
                 <p class="xs-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum possimus quidem
                     recusandae voluptates
                     fuga facere qui maxime quisquam voluptatibus vitae!</p>
             </div>
             <div class="services__box">
-                <div class="services__icon"><i class="fas fa-shipping-fast"></i></div>
+                <div class="services__icon gradient"><i class="fas fa-shipping-fast"></i></div>
                 <div class="heading heading--medium">best services</div>
                 <p class="xs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum commodi
                     eius
@@ -125,14 +125,14 @@
                     maiores. Sunt voluptas accusamus commodi nihil.</p>
             </div>
             <div class="services__box">
-                <div class="services__icon"><i class="fas fa-rocket"></i></div>
+                <div class="services__icon gradient"><i class="fas fa-rocket"></i></div>
                 <div class="heading heading--medium">best services</div>
                 <p class="xs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae dolorum
                     voluptas omnis?
                     Suscipit labore eius sapiente consequatur consectetur cumque!</p>
             </div>
             <div class="services__box">
-                <div class="services__icon"><i class="fas fa-warehouse"></i></div>
+                <div class="services__icon gradient"><i class="fas fa-warehouse"></i></div>
                 <div class="heading heading--medium">best services</div>
                 <p class="xs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut, et suscipit
                     ad
@@ -140,11 +140,29 @@
                     Nam nisi delectus temporibus. Fugiat.</p>
             </div>
             <div class="services__box">
-                <div class="services__icon"><i class="fas fa-envelope-open-text"></i></div>
+                <div class="services__icon gradient"><i class="fas fa-envelope-open-text"></i></div>
                 <div class="heading heading--medium">best services</div>
                 <p class="xs-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam fuga
                     voluptatum optio eius
                     nostrum atque sint laborum corrupti itaque!</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="wrap">
+            <h2 class="heading heading--xl heading--xl--testimonials">testimonials</h2>
+            <div class="testimonials__box">
+                <p class="testimonials__quotes xs-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Recusandae amet eius laboriosam consequatur doloribus ullam, beatae, at id iure expedita illo,
+                    dolorum nem vitam culpa velit. Delectus optio animi iusto libero excepturi, quas odio labore.
+                    <span class="testimonials__top">,,</span><span class="testimonials__bottom">,,</span></p>
+                <div class="testimonials__person">
+                    <div><img class="testimonials__photo" src="images/testimonials_person.png" alt="person"></div>
+                    <div class="testimonials__text">
+                        <p class="heading heading--large heading--xl--testimonials">Jon Brown</p>
+                        <p class="xs-text small-text--jobs">Graphic Designer</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

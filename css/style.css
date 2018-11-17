@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Bell';
+    src: url('../fonts/bell.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -23,7 +30,8 @@ body {
 }
 
 .heading--large {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    /* 3.5 */
 }
 
 .heading--medium {
@@ -51,12 +59,19 @@ body {
     line-height: 200%;
 }
 
+.small-text--jobs {
+    color: #a21af0;
+    font-weight: bold;
+}
 
 /* GLOBAL CSS */
 
 /*granatowy #15263e */
 /* fioletowy #a21af0 */
 /* różowy  #ff0072*/
+.gradient {
+    background: linear-gradient(45deg, #a21af0 25%, #ff0072 75%);
+}
 
 .wrap {
     max-width: 1200px;
@@ -67,7 +82,6 @@ body {
 .btn {
     border: none;
     text-transform: uppercase;
-    background: linear-gradient(to right, #a21af0, #ff0072);
     color: #fff;
     padding: 15px;
     font-size: 1.6rem;
@@ -75,7 +89,6 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 
 /*  icons */
 .fa-mobile-alt,
@@ -162,7 +175,6 @@ body {
     font-size: 8rem;
     line-height: 80%;
     display: inline-block;
-    background: linear-gradient(to right, #a21af0, #ff0072);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -180,16 +192,13 @@ body {
 /* ########################
             ABOUT
 ########################## */
+.wrap--about {
+    width: 90%;
+}
 
 .about-person {
     text-align: right;
     padding: 20px 0;
-}
-
-.about-person__job {
-    padding-bottom: 40px;
-    color: #a21af0;
-    font-weight: bold;
 }
 
 .about-stats {
@@ -204,7 +213,10 @@ body {
     height: 10px;
     margin: 15px 0 35px;
     border-radius: 20px;
-    background: linear-gradient(to right, #a21af0, #ff0072);
+}
+
+.xs-text--about {
+    padding-top: 40px;
 }
 
 /* ########################
@@ -255,13 +267,11 @@ body {
 }
 
 .services__box {
-    width: 60%;
+    width: 90%;
     padding-top: 40px;
 }
 
-
 .services__icon {
-    background: linear-gradient(to right, #a21af0, #ff0072);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -276,6 +286,71 @@ body {
     margin: 0 auto;
 }
 
+.small-text--services {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 140%;
+}
+
+/* ########################
+        TESTIMONIALS
+########################## */
+.testimonials {
+    padding: 60px 0;
+    background: url(../images/testimonials_bg.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials__box {
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.testimonials__quotes {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.testimonials__bottom,
+.testimonials__top {
+    position: absolute;
+    font-size: 50px;
+    line-height: 0;
+}
+
+.testimonials__top {
+    transform: rotate(180deg);
+    top: 15px;
+    left: -5%;
+}
+
+.testimonials__bottom {
+    bottom: 15px;
+    right: -5%;
+}
+
+.testimonials__person {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials__photo {
+    width: 80%;
+}
+
+.testimonials__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading--xl--testimonials {
+    color: #fff;
+    padding-bottom: 0;
+    letter-spacing: 1.2px;
+}
 
 /* ########################
         MEDIA QUERIES
@@ -283,7 +358,6 @@ body {
 
 @media (orientation: landscape) and (max-width: 900px) {
 
-    /* header */
     .header {
         height: 140vh;
     }
@@ -316,7 +390,6 @@ body {
         font-size: 1.8rem;
     }
 
-    /* header */
     .header__name {
         font-size: 12rem;
     }
@@ -334,14 +407,16 @@ body {
         font-size: 1.5rem;
     }
 
-    /* about */
+    .wrap--about {
+        width: 100%;
+    }
+
     .about {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    /* about */
     .about-person,
     .about-stats {
         width: 45%;
@@ -357,7 +432,6 @@ body {
     .services__box {
         width: 45%;
     }
-
 }
 
 @media (min-width: 768px) {
@@ -365,7 +439,6 @@ body {
         font-size: 5rem;
     }
 
-    /* header */
     .header__name {
         font-size: 14rem;
     }
@@ -378,7 +451,6 @@ body {
         font-size: 1.7rem;
     }
 
-    /* about */
     .about-person,
     .about-stats {
         width: 47%;
@@ -397,16 +469,46 @@ body {
 
 @media (min-width: 1024px) {
 
-    /*  about */
     .about-person,
     .about-stats {
         width: 46%;
+    }
+
+    .testimonials {
+        padding: 130px 2%;
+    }
+
+    .testimonials__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonials__quotes {
+        flex: 0 1 52%;
+        padding-bottom: 0;
+    }
+
+    .testimonials__person {
+        flex-basis: 40%;
+        justify-content: space-evenly;
+    }
+
+    .testimonials__photo {
+        width: 100%;
+    }
+
+    .testimonials__box {
+        width: 100%;
+    }
+
+    .heading--large {
+        font-size: 3.5rem;
     }
 }
 
 @media (min-width: 1200px) {
 
-    /* about */
     .about {
         padding: 80px 0;
         background: url(../images/about_person.png) no-repeat center;
@@ -428,7 +530,6 @@ body {
 
 @media (min-width: 1366px) {
 
-    /* header */
     .header__name {
         font-size: 20rem;
     }
@@ -449,7 +550,6 @@ body {
         padding-top: 0;
     }
 
-    /* small footer */
     .small-footer__icon {
         margin: 0 25px 0 0;
         text-align: center;
@@ -459,9 +559,5 @@ body {
         display: flex;
         align-items: center;
         text-align: left;
-    }
-
-    .title--small-footer {
-        padding-top: 0;
     }
 }
