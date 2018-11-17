@@ -159,7 +159,7 @@ body {
 }
 
 .header {
-    background: url(../images/bg_home.jpg) no-repeat center -2vh;
+    background: url(../images/bg_home.jpg) no-repeat center;
     background-size: cover;
     height: 75vh;
     font-weight: 700;
@@ -194,11 +194,12 @@ body {
 ########################## */
 .wrap--about {
     width: 90%;
+    padding: 60px 2% 40px;
 }
 
 .about-person {
     text-align: right;
-    padding: 20px 0;
+    padding-bottom: 40px;
 }
 
 .about-stats {
@@ -255,7 +256,7 @@ body {
         SERVICES
 ########################## */
 .services {
-    padding: 40px 0;
+    padding: 60px 0 80px;
     text-align: center;
 }
 
@@ -278,14 +279,6 @@ body {
     margin: 0 auto;
 }
 
-.small-footer__icon {
-    background-color: #374362;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
 .small-text--services {
     width: 80%;
     margin: 0 auto;
@@ -296,7 +289,7 @@ body {
         TESTIMONIALS
 ########################## */
 .testimonials {
-    padding: 60px 0;
+    padding: 60px 0 100px;
     background: url(../images/testimonials_bg.png) no-repeat;
     background-size: cover;
     text-align: center;
@@ -422,6 +415,16 @@ body {
         width: 45%;
     }
 
+    .small-footer__parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .small-footer__box {
+        flex-basis: 50%;
+    }
+
     .services__boxes {
         flex-direction: row;
         flex-wrap: wrap;
@@ -457,13 +460,7 @@ body {
     }
 
     .small-footer__box {
-        width: 33.33%;
-    }
-
-    .small-footer__parent {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        flex: 1 1 33%;
     }
 }
 
@@ -474,8 +471,12 @@ body {
         width: 46%;
     }
 
+    .services {
+        padding: 90px 0 140px;
+    }
+
     .testimonials {
-        padding: 130px 2%;
+        padding: 130px 2% 190px;
     }
 
     .testimonials__box {
@@ -508,6 +509,10 @@ body {
 }
 
 @media (min-width: 1200px) {
+    .wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .about {
         padding: 80px 0;
