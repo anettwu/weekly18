@@ -189,6 +189,81 @@ body {
     font-size: 1.2rem;
 }
 
+@media (orientation: landscape) and (max-width: 900px) {
+    .header {
+        height: 140vh;
+    }
+
+    .header__name {
+        font-size: 10rem;
+    }
+
+    .header__surname {
+        font-size: 8.2rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .header {
+        height: 60vh;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .header__name {
+        font-size: 12rem;
+    }
+
+    .header__surname {
+        font-size: 10rem;
+    }
+
+    .header__hello {
+        font-size: 3rem;
+    }
+
+    .header__text {
+        padding: 10px 0 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .header__name {
+        font-size: 14rem;
+    }
+
+    .header__surname {
+        font-size: 12rem;
+    }
+
+    .header__text {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (min-width: 1366px) {
+
+    .header__name {
+        font-size: 20rem;
+    }
+
+    .header__surname {
+        font-size: 17rem;
+    }
+
+    .header__hello {
+        font-size: 3.5rem;
+    }
+
+    .header__text {
+        font-size: 2.5rem;
+    }
+}
+
 /* ########################
             ABOUT
 ########################## */
@@ -218,6 +293,55 @@ body {
 
 .xs-text--about {
     padding-top: 40px;
+}
+
+@media (min-width: 640px) {
+    .wrap--about {
+        width: 100%;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-person,
+    .about-stats {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .about-person,
+    .about-stats {
+        width: 47%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .about-person,
+    .about-stats {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        padding: 80px 0;
+        background: url(../images/about_person.png) no-repeat center;
+    }
+
+    .about-stats {
+        padding-left: 30px;
+    }
+
+    .about-person,
+    .about-stats {
+        width: 28%;
+    }
 }
 
 /* ########################
@@ -252,6 +376,37 @@ body {
     line-height: 130%;
 }
 
+@media (min-width: 640px) {
+    .small-footer__parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .small-footer__box {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .small-footer__box {
+        flex: 1 1 33%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .small-footer__icon {
+        margin: 0 25px 0 0;
+        text-align: center;
+    }
+
+    .small-footer__box {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+}
+
 /* ########################
         SERVICES
 ########################## */
@@ -283,6 +438,35 @@ body {
     width: 80%;
     margin: 0 auto;
     line-height: 140%;
+}
+
+@media (min-width: 640px) {
+    .services__boxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .services__box {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services {
+        padding: 90px 0 140px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .services__box {
+        width: 30%;
+    }
+
+    .services__boxes {
+        justify-content: space-between;
+    }
 }
 
 /* ########################
@@ -342,139 +526,10 @@ body {
 .heading--xl--testimonials {
     color: #fff;
     padding-bottom: 0;
-    letter-spacing: 1.2px;
-}
-
-/* ########################
-        MEDIA QUERIES
-########################## */
-
-@media (orientation: landscape) and (max-width: 900px) {
-
-    .header {
-        height: 140vh;
-    }
-
-    .header__name {
-        font-size: 10rem;
-    }
-
-    .header__surname {
-        font-size: 8.2rem;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 768px) {
-    .header {
-        height: 60vh;
-    }
-}
-
-@media (min-width: 360px) {
-
-    .heading--xs {
-        font-size: 1.8rem;
-    }
-}
-
-@media (min-width: 640px) {
-    .btn {
-        padding: 20px;
-        font-size: 1.8rem;
-    }
-
-    .header__name {
-        font-size: 12rem;
-    }
-
-    .header__surname {
-        font-size: 10rem;
-    }
-
-    .header__hello {
-        font-size: 3rem;
-    }
-
-    .header__text {
-        padding: 10px 0 40px;
-        font-size: 1.5rem;
-    }
-
-    .wrap--about {
-        width: 100%;
-    }
-
-    .about {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .about-person,
-    .about-stats {
-        width: 45%;
-    }
-
-    .small-footer__parent {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .small-footer__box {
-        flex-basis: 50%;
-    }
-
-    .services__boxes {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-around;
-    }
-
-    .services__box {
-        width: 45%;
-    }
-}
-
-@media (min-width: 768px) {
-    .heading--xl {
-        font-size: 5rem;
-    }
-
-    .header__name {
-        font-size: 14rem;
-    }
-
-    .header__surname {
-        font-size: 12rem;
-    }
-
-    .header__text {
-        font-size: 1.7rem;
-    }
-
-    .about-person,
-    .about-stats {
-        width: 47%;
-    }
-
-    .small-footer__box {
-        flex: 1 1 33%;
-    }
+    letter-spacing: 1.4px;
 }
 
 @media (min-width: 1024px) {
-
-    .about-person,
-    .about-stats {
-        width: 46%;
-    }
-
-    .services {
-        padding: 90px 0 140px;
-    }
-
     .testimonials {
         padding: 130px 2% 190px;
     }
@@ -501,7 +556,28 @@ body {
 
     .testimonials__box {
         width: 100%;
+        padding-top: 90px;
     }
+}
+
+/* ########################
+    GLOBAL MEDIA QUERIES
+########################## */
+
+@media (min-width: 640px) {
+    .btn {
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading--xl {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
 
     .heading--large {
         font-size: 3.5rem;
@@ -513,56 +589,10 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
-
-    .about {
-        padding: 80px 0;
-        background: url(../images/about_person.png) no-repeat center;
-    }
-
-    .about-stats {
-        padding-left: 30px;
-    }
-
-    .about-person,
-    .about-stats {
-        width: 28%;
-    }
-
-    .services__box {
-        width: 30%;
-    }
 }
 
 @media (min-width: 1366px) {
-
-    .header__name {
-        font-size: 20rem;
-    }
-
-    .header__surname {
-        font-size: 17rem;
-    }
-
-    .header__hello {
-        font-size: 3.5rem;
-    }
-
-    .header__text {
-        font-size: 2.5rem;
-    }
-
     .heading--xs {
         padding-top: 0;
-    }
-
-    .small-footer__icon {
-        margin: 0 25px 0 0;
-        text-align: center;
-    }
-
-    .small-footer__box {
-        display: flex;
-        align-items: center;
-        text-align: left;
     }
 }
